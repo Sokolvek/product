@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 200px;
+
+    & > nav{
+
+        & > ul{
+            display: flex;
+            flex-direction: column;
+
+            & > li{
+                width: 15px;
+                height: 2px;
+                background-color: grey;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    & .title{
+        display: flex;
+        align-items: center;
+        & > h1{
+            font-size: 3rem;
+        }
+
+        & .title-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+
+            & > span{
+                font-size: 3rem;
+            }
+        }
+    }
+
+    & > .view{
+
+        & > a{
+            position: relative;
+            transition: 1s;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 30px;
+                left: 50%;
+                width: 2px;
+                height: 40px;
+                transition: 1s;
+                background-color: #eb9e66;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                width: 2px;
+                height: 40px;
+                transition: 1s;
+                background-color: #eb9e66;
+            }
+
+            &:hover{
+                color: #eb9e66;
+                transition: 1s;
+
+             
+            }
+
+            &:hover::before{
+                top: 10px;
+                height: 0px;
+            }
+            &:hover::after{
+                bottom: 10px;
+                height: 0px;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 645px) {
+    main{
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 0px 0px;
+        & > nav,div{
+            padding: 45px 0;
+        }
+        
+        & > .view{
+          position: absolute;
+          right: 30px;
+          bottom: 30px;
+          padding: 0;
+          & .circle{
+            position: relative;
+            height: 40px;
+            width: 40px;
+            padding: 0;
+            border: #eb9e66 1.5px solid;
+            border-radius: 300px;
+            background-color: transparent;
+
+            & .arrow{
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding: 0;
+                width: 20px;
+                height: 2px;
+                background-color: white;
+
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background-color: white;
+                    width: 10px;
+                    height: 2px;
+                    top: 4px;
+                    right: 0;
+                    transform: rotate(-45deg);
+                }
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-color: white;
+                    width: 10px;
+                    height: 2px;
+                    top: -4px;
+                    right: 0;
+                    transform: rotate(45deg);
+                }
+            }
+          }
+   
+         
+         
+          
+         
+
+          & > a{
+            display: none;
+            font-size: 2rem;
+            text-indent: -9999px;
+          }
+        }
+    }
+
+
+}

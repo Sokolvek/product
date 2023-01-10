@@ -1,0 +1,16 @@
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+
+    & > a{
+        padding: 10px;
+    }
+
+    & > a:nth-child(2){
+        transform: rotate(90deg);
+    }
+}
