@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px 0;
 }
 
 .burger-menu{
@@ -72,7 +73,7 @@
         font-weight: 400;
         margin: 1.87rem 0 1.87rem 0px;
         letter-spacing: -3px;
-        padding-left: 5.75rem;
+        padding-left: 1rem;
         line-height: 5rem;
         position: relative;
 
@@ -249,7 +250,7 @@
     
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1305px) {
     #cart{
         height: 120vh;
     }
@@ -265,8 +266,12 @@
             display: flex;
             justify-content: center;
 
+          
+                font-size: 5rem;
+            
+            
             & > span{
-                right: 65%;
+                right: 58%;
             }
         }
 
@@ -301,7 +306,7 @@
 
             & .dots{
                 bottom: -4.25rem;
-                left: 24%;
+                // left: 380px;
             }
         }
     }
@@ -314,27 +319,56 @@
     
 }
 
+@media (max-width:550px) {
+    .slider{
+
+        & article{
+
+            padding: 0px 2rem;
+
+            & .slide-title{
+                font-size: 4.7rem;
+            }
+
+            & .slide-descriptions{
+                margin-bottom: 100px;
+            }
+
+            & .dots{
+                left: 12%;
+                bottom: -6rem;
+            }
+        }
+    }
+}
+
 
 @media (max-width:420px) {
 
 
     .slider{
 
-        & .slide-title{
-            padding-left: 6.18rem;
-
-            & > span{
-                right: 55%;
-            }
-        }
-
+        
         & article{
-
+            
+            & .slide-title{
+                padding-left: 6.18rem;
+                font-size: 4rem;
+    
+                & > span{
+                    right: 55%;
+                }
+            }
             padding: 0px 1.25rem;
+
+            & .slide-descriptions{
+                margin-bottom: 50px;
+            }
+
             & .dots{
                 
                 left: 5.5%;
-                bottom: -1.87rem;
+                bottom: -4.87rem;
                 transform: translate(0);
             }
 

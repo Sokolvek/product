@@ -6,13 +6,13 @@
       <a href="#"></a>
     </aside>
     <main>
-      <nav>
+      <!-- <nav>
         <ul>
           <li class="liOne"></li>
           <li class="liTwo"></li>
           <li class="liThree"></li>
         </ul>
-      </nav>
+      </nav> -->
 
       <NuxtLink to="/cart" class="title" style="cursor: pointer" @click="change()">
         <h1>X</h1>
