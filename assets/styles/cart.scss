@@ -14,26 +14,26 @@
 
 .burger-menu{
     position: relative;
-    width: 25px;
-    height: 2px;
+    width: 1.56rem;
+    height: 0.125rem;
     background-color: white;
 
     &::before{
         content: '';
         position: absolute;
-        width: 25px;
-        height: 2px;
+        width:  1.56rem;
+        height: 0.125rem;
         background-color: white;
-        top: 4px;
+        top: 0.25rem;
     }
     
     &::after{
         content: '';
         position: absolute;
-        width: 25px;
-        height: 2px;
+        width:  1.56rem;
+        height: 0.125rem;
         background-color: white;
-        bottom: 4px;
+        bottom:  0.25rem;
     }
 }
 
@@ -54,26 +54,26 @@
   
   
   
-    margin-top: 70px;
+    margin-top: 4.37rem;
     margin-right: 0px;
     
  
 
     & .img{
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     object-fit: scale-down;
     margin-right: 0px;
     }
 
     & .slide-title{
-        font-size: 110px;
-        font-size: 70px;
+        font-size: 6.87rem;
+       
         font-weight: 400;
-        margin: 30px 0 30px 0px;
+        margin: 1.87rem 0 1.87rem 0px;
         letter-spacing: -3px;
-        padding-left: 12px;
-        line-height: 80px;
+        padding-left: 5.75rem;
+        line-height: 5rem;
         position: relative;
 
         & > span{
@@ -92,7 +92,7 @@
                     display: block;
                     position: absolute;
                     bottom: 0;
-                    left: -10px;
+                    left: -0.62rem;
                     width: 108%;
                     height: 40%;
                     background-color: #343234;
@@ -105,17 +105,17 @@
 
     & > article{
        
-        max-width: 500px;
+        max-width: 31rem;
         width: 100%;
 
         & .slide-count{
 
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 0.62rem;
             & .count-line{
                 display: inline-block;
-                width: 30px;
+                width: 1.87rem;
                 height: 1px;
                 background-color: white;
                 vertical-align: middle;
@@ -123,10 +123,10 @@
         }
 
         & .slide-descriptions{
-            font-size: 12px;
-            max-width: 380px;
+            font-size: 1rem;
+            max-width: 23.7rem;
             width: 100%;
-            margin-bottom: 200px;
+            margin-bottom: 12.5rem;
             position: relative;
 
             & .current-description{
@@ -135,13 +135,13 @@
         }
 
         & > .btn{
-            margin-top: 100px;
+            margin-top: 6.25rem;
             position: relative;
 
             &::before{
                 content: '';
                 position: absolute;
-                top: 20px;
+                top: 1.25rem;
                 width: 100%;
                 height: 1px;
                 background-color: white;
@@ -152,16 +152,16 @@
 
             & > button{
               position: absolute;
-              border-radius: 100px;
-              width: 35px;
-              height: 35px;
+              border-radius: 6.25rem;
+              width: 2.18rem;
+              height: 2.18rem;
               border: 1px solid #434143;
               background-color: #161516;
                 
               & > img{
                 position: relative;
-                width: 15px;
-                height: 15px;
+                width: 0.93rem;
+                height: 0.93rem;
                 
                 // top: 50%;
                 // left: 50%;
@@ -184,15 +184,15 @@
 
         & .dots{
             position: absolute;
-            bottom: 25px;
+            bottom: 0.64rem;
             left: 50%;
             transform: translateX(-50%);
 
             & .dot{
                 display: inline-block;
-                width: 5px;
-                height: 5px;
-                border-radius: 10px;
+                width: 0.31rem;
+                height: 0.31rem;
+                border-radius: 0.62rem;
                 background-color: #313131;
             }
 
@@ -209,12 +209,12 @@
     & .category{
         position: absolute;
         right: 15%;
-        bottom: 200px;
+        bottom: 12.5rem;
         writing-mode: vertical-lr;
     }
 }
 .btn{
-    margin-top: 90px;
+    margin-top: 5.62rem;
 }
 
 .next{
@@ -226,6 +226,29 @@
 
 }
 
+@media (max-width: 1500px) {
+
+    .slider{
+
+        & article{
+            & .side-nav{
+                
+                & .btn-next{
+
+                    right: 10%;
+                    top: 37%;
+                }
+
+                & .btn-prev{
+                    right: 10%;
+                }
+
+            }
+        }
+    }
+    
+}
+
 @media (max-width: 1105px) {
     #cart{
         height: 120vh;
@@ -235,7 +258,7 @@
         justify-content: center;
         align-items: center;
         & .category{
-            right: 15px;
+            right: 0.93rem;
         }
 
         & .slide-title{
@@ -248,14 +271,15 @@
         }
 
         & article{
-            margin-top: 50px;
+            margin-top: 3.12rem;
             & .slide-count{
                
             }
 
             & .slide-descriptions{
-                margin-bottom: 50px;
+                margin-bottom: 3.12rem;
               
+               
             }
 
             & .side-nav{
@@ -276,7 +300,7 @@
             }
 
             & .dots{
-                bottom: -100px;
+                bottom: -4.25rem;
                 left: 24%;
             }
         }
@@ -297,7 +321,7 @@
     .slider{
 
         & .slide-title{
-            padding-left: 99px;
+            padding-left: 6.18rem;
 
             & > span{
                 right: 55%;
@@ -306,18 +330,18 @@
 
         & article{
 
-            padding: 0px 20px;
+            padding: 0px 1.25rem;
             & .dots{
                 
                 left: 5.5%;
-                bottom: -30px;
+                bottom: -1.87rem;
                 transform: translate(0);
             }
 
             & .slide-descriptions{
 
                 & > p{
-                    padding: 0px 15px;
+                    padding: 0px 0.93rem;
                     text-align: center;
                 }
             }
